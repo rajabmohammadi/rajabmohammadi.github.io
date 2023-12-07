@@ -1,0 +1,108 @@
+/* @font-face {
+  font-family: "vazir-bold";
+  src: url("../fonts/Vazir-Bold.ttf");
+}
+@font-face {
+  font-family: "vazir-light";
+  src: url("../fonts/Vazir-Light.ttf");
+}
+@font-face {
+  font-family: "vazir-medium";
+  src: url("../fonts/Vazir-Medium.ttf");
+}
+@font-face {
+  font-family: "vazir-thin";
+  src: url("../fonts/Vazir-Thin.ttf");
+} */
+@font-face {
+  font-family: "yekan-bold";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-06-Bold.woff");
+}
+@font-face {
+  font-family: "yekan-heavy";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-07-Heavy.woff");
+}
+@font-face {
+  font-family: "yekan-medium";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-05-Medium.woff");
+}
+@font-face {
+  font-family: "yekan-regular";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-04-Regular\ \(1\).woff");
+}
+@font-face {
+  font-family: "yekan-light";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-03-Light.woff");
+}
+@font-face {
+  font-family: "yekan-thin";
+  src: url("../fonts-yekan/Yekan-Bakh-FA-02-Thin.woff");
+}
+:root {
+  --primary: #f0aa1c;
+  --primary-light: #fbf7f2;
+}
+* {
+  box-sizing: border-box;
+
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "yekan-heavy";
+}
+p {
+  font-family: "yekan-light";
+  font-size: 20px;
+  text-align: justify;
+}
+button {
+  font-family: "yekan-medium" !important;
+}
+a {
+  font-family: "yekan-bold";
+  font-size: 25px !important;
+}
+nav {
+  background-color: #f0aa1c;
+}
+header {
+  width: 100%;
+  min-height: 400px !important;
+  background-color: var(--primary-light);
+  background: linear-gradient(90deg, #f0f2ff 0%, #fbf7f2 100%);
+  margin-top: 70px;
+}
+header iframe {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 10px;
+}
+div.course-content {
+  background-color: var(--primary-light);
+}
+div.course-content .item {
+  background-color: #fff;
+  background-clip: content-box;
+}
+div.item p {
+  font-size: 18px;
+  font-family: "yekan-light";
+}
+div.instructor {
+  background: linear-gradient(90deg, #f0f2ff 0%, #fbf7f2 100%);
+}
+div.about-me p,
+div.profile {
+  border-radius: 16px;
+  border: 9px solid var(--primary-light);
+  background: #fff;
+  box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.12);
+}
+div.about-me p {
+  line-height: 40px;
+}
