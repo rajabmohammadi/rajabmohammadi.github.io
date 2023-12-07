@@ -1,19 +1,31 @@
-/* @font-face {
-  font-family: "vazir-bold";
-  src: url("../fonts/Vazir-Bold.ttf");
+@font-face {
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-brands-400.ttf");
 }
 @font-face {
-  font-family: "vazir-light";
-  src: url("../fonts/Vazir-Light.ttf");
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-brands-400.woff2");
 }
 @font-face {
-  font-family: "vazir-medium";
-  src: url("../fonts/Vazir-Medium.ttf");
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-regular-400.ttf");
 }
 @font-face {
-  font-family: "vazir-thin";
-  src: url("../fonts/Vazir-Thin.ttf");
-} */
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-brands-400.ttf");
+}
+@font-face {
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-regular-400.woff2");
+}
+@font-face {
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-solid-900.ttf");
+}
+@font-face {
+  font-family: "font-awesome";
+  src: url("../webfonts/fa-solid-900.woff2");
+}
 @font-face {
   font-family: "yekan-bold";
   src: url("../fonts-yekan/Yekan-Bakh-FA-06-Bold.woff");
@@ -44,7 +56,6 @@
 }
 * {
   box-sizing: border-box;
-
   margin: 0px;
 }
 h1,
@@ -63,7 +74,7 @@ p {
 button {
   font-family: "yekan-medium" !important;
 }
-a {
+nav a {
   font-family: "yekan-bold";
   font-size: 25px !important;
 }
@@ -93,16 +104,79 @@ div.item p {
   font-size: 18px;
   font-family: "yekan-light";
 }
-div.instructor {
-  background: linear-gradient(90deg, #f0f2ff 0%, #fbf7f2 100%);
-}
+
 div.about-me p,
-div.profile {
+div.profile,
+div.enroll ul {
   border-radius: 16px;
   border: 9px solid var(--primary-light);
   background: #fff;
   box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.12);
 }
+
 div.about-me p {
   line-height: 40px;
+}
+div.enroll {
+  background-color: var(--primary-light);
+  min-height: 400px;
+}
+.list-group {
+  padding-right: 0px;
+  --bs-list-group-bg: transparent;
+}
+li {
+  font-family: "yekan-medium";
+  font-size: 19px;
+}
+.list-group li:nth-child(1)::before {
+  content: "\f51c";
+  font-family: "font-awesome";
+}
+.list-group li:nth-child(1)::before {
+  content: "\f51c";
+  font-family: "font-awesome";
+  padding-left: 10px;
+  color: var(--primary);
+}
+.list-group li:nth-child(2)::before {
+  content: "\f393";
+  font-family: "font-awesome";
+  padding-left: 10px;
+  color: var(--primary);
+}
+.list-group li:nth-child(3)::before {
+  content: "\f0c0";
+  font-family: "font-awesome";
+  padding-left: 10px;
+  color: var(--primary);
+}
+ul.enroll a {
+  display: inline;
+}
+ul.enroll li{
+  font-size: 25px;
+}
+ul.enroll li::before {
+  font-family: "font-awesome";
+  padding-left: 10px;
+  color: var(--primary);
+}
+ul.enroll li:nth-child(1)::before {
+  content: "\f071";
+}
+ul.enroll li:nth-child(2)::before {
+  content: "\f59f";
+}
+ul.enroll li:nth-child(3)::before {
+  content: "\f017";
+}
+ul.enroll li:nth-child(4)::before {
+  content: "\f879";
+}
+ul.enroll li:nth-child(5)::before {
+  content: "\f2c6";
+}
+ul.enroll li:nth-child(6)::before {
+  content: "\f232";
 }
