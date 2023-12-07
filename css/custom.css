@@ -154,9 +154,6 @@ li {
 ul.enroll a {
   display: inline;
 }
-ul.enroll li{
-  font-size: 25px;
-}
 ul.enroll li::before {
   font-family: "font-awesome";
   padding-left: 10px;
