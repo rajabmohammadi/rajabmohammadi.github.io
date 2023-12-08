@@ -50,6 +50,10 @@
   font-family: "yekan-thin";
   src: url("../fonts-yekan/Yekan-Bakh-FA-02-Thin.woff");
 }
+@font-face {
+  font-family: "morabba";
+  src: url("../fonts-yekan/Morabba-Heavy.ttf");
+}
 :root {
   --primary: #f0aa1c;
   --primary-light: #fbf7f2;
@@ -71,12 +75,13 @@ p {
   font-size: 20px;
   text-align: justify;
 }
+
 button {
   font-family: "yekan-medium" !important;
 }
 nav a {
   font-family: "yekan-bold";
-  font-size: 25px !important;
+  font-size: 23px !important;
 }
 nav {
   background-color: #f0aa1c;
@@ -86,12 +91,14 @@ header {
   min-height: 400px !important;
   background-color: var(--primary-light);
   background: linear-gradient(90deg, #f0f2ff 0%, #fbf7f2 100%);
-  margin-top: 70px;
 }
 header iframe {
   width: 100%;
   min-height: 300px;
   border-radius: 10px;
+}
+h1.title {
+  font-family: "morabba";
 }
 div.course-content {
   background-color: var(--primary-light);
@@ -176,4 +183,16 @@ ul.enroll li:nth-child(5)::before {
 }
 ul.enroll li:nth-child(6)::before {
   content: "\f232";
+}
+div.questions a {
+  font-family: "yekan-bold";
+  font-size: 22px;
+  width: 100%;
+  text-align: right;
+}
+.btn:focus {
+  border: none;
+}
+.card-header {
+  background-color: var(--primary-light);
 }
